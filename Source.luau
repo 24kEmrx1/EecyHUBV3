@@ -1,7 +1,10 @@
 local G2L = {};
 local DRAG_FRAME = true
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui").RobloxGui);
 G2L["1"]["Name"] = [[EecyHUB]];
+G2L["1"]["IgnoreGuiInset"] = true
+G2L["1"]["ResetOnSpawn"] = false
+G2L["1"]["DisplayOrder"] = 2147483647
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
